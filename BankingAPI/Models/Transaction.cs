@@ -14,5 +14,15 @@ namespace BankingAPI.Models
         public DateTime Timestamp { get; set; }
         [ForeignKey("AccountNumber")]
         public Account Account { get; set; }
+
+        public Transaction() { }
+
+        public Transaction(string accountNumber, string transactionType, double amount, DateTime timeStamp)
+        {
+            AccountNumber = accountNumber;
+            TransactionType = transactionType;
+            Amount = amount;
+            Timestamp = timeStamp;
+        }
     }
 }

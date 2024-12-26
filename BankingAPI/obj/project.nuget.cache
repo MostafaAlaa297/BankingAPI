@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "EBZSWesTddWraTofTMhVG1fG4lyNusEkmfhQmwfks0eOPcfYecsoqkdTTEsMLzfB3v8bGblUtOsL42kC91DxGA==",
+  "dgSpecHash": "85P7IMmqTQ0=",
   "success": true,
   "projectFilePath": "D:\\Codingo Stuffo\\PayskyTask\\BankingAPI\\BankingAPI\\BankingAPI.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\مصطفى علاء\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.36\\microsoft.entityframeworkcore.abstractions.6.0.36.nupkg.sha512",
     "C:\\Users\\مصطفى علاء\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.36\\microsoft.entityframeworkcore.analyzers.6.0.36.nupkg.sha512",
     "C:\\Users\\مصطفى علاء\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.36\\microsoft.entityframeworkcore.design.6.0.36.nupkg.sha512",
+    "C:\\Users\\مصطفى علاء\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\6.0.36\\microsoft.entityframeworkcore.inmemory.6.0.36.nupkg.sha512",
     "C:\\Users\\مصطفى علاء\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.36\\microsoft.entityframeworkcore.relational.6.0.36.nupkg.sha512",
     "C:\\Users\\مصطفى علاء\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\6.0.36\\microsoft.entityframeworkcore.sqlite.6.0.36.nupkg.sha512",
     "C:\\Users\\مصطفى علاء\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\6.0.36\\microsoft.entityframeworkcore.sqlite.core.6.0.36.nupkg.sha512",
@@ -39,7 +40,11 @@
     "C:\\Users\\مصطفى علاء\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\مصطفى علاء\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\مصطفى علاء\\.nuget\\packages\\system.text.encodings.web\\6.0.1\\system.text.encodings.web.6.0.1.nupkg.sha512",
-    "C:\\Users\\مصطفى علاء\\.nuget\\packages\\system.text.json\\6.0.11\\system.text.json.6.0.11.nupkg.sha512"
+    "C:\\Users\\مصطفى علاء\\.nuget\\packages\\system.text.json\\6.0.11\\system.text.json.6.0.11.nupkg.sha512",
+    "C:\\Users\\مصطفى علاء\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.35\\microsoft.netcore.app.ref.6.0.35.nupkg.sha512",
+    "C:\\Users\\مصطفى علاء\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.35\\microsoft.windowsdesktop.app.ref.6.0.35.nupkg.sha512",
+    "C:\\Users\\مصطفى علاء\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.35\\microsoft.aspnetcore.app.ref.6.0.35.nupkg.sha512",
+    "C:\\Users\\مصطفى علاء\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.35\\microsoft.netcore.app.host.win-x64.6.0.35.nupkg.sha512"
   ],
   "logs": []
 }

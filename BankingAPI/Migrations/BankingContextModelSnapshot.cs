@@ -29,6 +29,12 @@ namespace BankingAPI.Migrations
                     b.Property<double>("Balance")
                         .HasColumnType("REAL");
 
+                    b.Property<float?>("InterestRate")
+                        .HasColumnType("REAL");
+
+                    b.Property<double?>("OverdraftLimit")
+                        .HasColumnType("REAL");
+
                     b.HasKey("AccountNumber");
 
                     b.ToTable("Accounts");

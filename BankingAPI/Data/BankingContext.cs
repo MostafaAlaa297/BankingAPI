@@ -7,8 +7,20 @@ namespace BankingAPI.Data
     {
         public BankingContext(DbContextOptions<BankingContext> options) : base(options) { }
 
-        public DbSet<Account>? Accounts { get; set; }
-        public DbSet<Transaction>? Transactions { get; set; }
+        public class BankingContextFactory
+        {
+            public static BankingContext CreateContext()
+            {
+                var options = new DbContextOptionsBuilder<BankingContext>()
+                    .UseInMemoryDatabase(Guid.NewGuid().ToString())
+                    .Options;
+                return new BankingContext(options);
+            }
+        }
+
+
+        public DbSet<Account> Accounts { get; set; }
+        public DbSet<Transaction> Transactions { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

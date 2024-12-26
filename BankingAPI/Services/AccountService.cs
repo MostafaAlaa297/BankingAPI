@@ -9,6 +9,15 @@ namespace BankingAPI.Services
         private readonly BankingContext _context;
         public string AccountType { get; protected set; }
         public string AccountNumber { get; protected set; }
+        public double? Amount { get; protected set; }
+
+        public AccountService(string accountnumber, string accountType, double amount, BankingContext context)
+        {
+            AccountNumber = accountnumber;
+            AccountType = accountType;
+            Amount = amount;
+            _context = context;
+        }
         public AccountService(BankingContext context)
         {
             _context = context;
@@ -25,17 +34,12 @@ namespace BankingAPI.Services
             account.AccountType = accountType;
             account.AccountNumber = accountNumber;
 
-            var transaction = new Transaction
-            {
-                TransactionType = "Deposit",
-                Amount = amount,
-                Timestamp = DateTime.UtcNow,
-                AccountNumber = accountNumber
-            };
+            var transaction = new Transaction(accountNumber, "Deposit", amount, DateTime.UtcNow);
 
             _context.Transactions?.Add(transaction);
             _context.SaveChanges();
 
+            Console.WriteLine($"Your current balance is: {account.Balance}");
             return account.Balance;
         }
 
@@ -50,17 +54,13 @@ namespace BankingAPI.Services
 
             account.AccountType = accountType;
 
-            var transaction = new Transaction
-            {
-                TransactionType = "Withdraw",
-                Amount = amount,
-                Timestamp = DateTime.UtcNow,
-                AccountNumber = accountNumber
-            };
+            var transaction = new Transaction(accountNumber, "Withdraw", amount, DateTime.UtcNow);
+            
+            account.Balance -= amount;
 
             _context.Transactions?.Add(transaction);
             _context.SaveChanges();
-
+            Console.WriteLine($"Your current balance is: {account.Balance}");
             return account.Balance;
         }
     }
